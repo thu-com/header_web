@@ -3,138 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to ZeZe English Center</title>
-    <style>
-    .infiniteslide_wrap {
-      width: 100%;          
-      overflow: hidden;      
-      background: #f0f0f0;
-      border: 1px solid #ccc;
-      padding: 10px 0;
-      white-space: nowrap;
-      box-sizing: border-box;
-    }
-
-    .infiniteslide {
-      display: inline-block;
-      padding-right: 50px; 
-    }
-
-    .slide-track {
-      display: inline-block;
-      animation: slide 10s linear infinite;
-    }
-
-    @keyframes slide {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-50%); } 
-    }
-  </style>
-</head>
-<body>
-  <div class="infiniteslide_wrap">
-    <div class="slide-track">
-      <div class="infiniteslide">🎉 Welcome to ZeZe English Center 🎉</div>
-      <div class="infiniteslide">🎉 Welcome to ZeZe English Center 🎉</div>
-      <div class="infiniteslide">🎉 Welcome to ZeZe English Center 🎉</div>
-      <div class="infiniteslide">🎉 Welcome to ZeZe English Center 🎉</div>
-      <div class="infiniteslide">🎉 Welcome to ZeZe English Center 🎉</div>
-      <div class="infiniteslide">🎉 Welcome to ZeZe English Center 🎉</div>
-      <div class="infiniteslide">🎉 Welcome to ZeZe English Center 🎉</div>
-      <div class="infiniteslide">🎉 Welcome to ZeZe English Center 🎉</div>
-      <div class="infiniteslide">🎉 Welcome to ZeZe English Center 🎉</div>
-    </div>
-  </div>
+  <title>ZeZe English</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    .navbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: #00537a; 
-      padding: 10px 40px;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .logo img {
-      height: 40px;
-      width: 40px;
-    }
-
-    .logo span {
-      color: white;
-      font-weight: bold;
-    }
-
-    .menu {
-      display: flex;
-      gap: 30px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .menu li a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .menu li a:hover {
-      text-decoration: underline;
-    }
-
-
-    .cta {
-      background-color: #ffcc00; 
-      color: #000;
-      padding: 10px 20px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .cta:hover {
-      background-color: #ffdb4d;
-    }
+    @import url("thustyles.css");
   </style>
 </head>
 <body>
-  <header class="navbar">
+
+  <div class="news-banner">
+    <span>📰 Tin tức: Khai giảng khóa học IELTS tháng 10 - Ưu đãi 30% cho học viên đăng ký sớm! 📰</span>
+  </div>
+  <header>
     <div class="logo">
-  <a href="index2.html" target="_blank" style="color:#ffcc00; text-decoration:none; font-weight:bold; display: flex; align-items: center; gap: 10px;">
-    <img src="logo1.png" alt="Logo" style="background: transparent; height:40px;">
-    ZeZe English
-  </a>
-</div>
+      <img src="logo.png" alt="Logo">
+    <a href="index2.html" style="color: #ffba42; text-decoration: none; font-weight: bold;">
+      ZeZe English
+    </a>
+    </div>
 
+    <nav>
+      <ul>
+        <li class="has-submenu"><a href="course.html">Khóa học</a>
+          <ul>
+            <li><a href="course-detail1.html">IELTS Cơ Bản</a></li>
+            <li><a href="course-detail2.html">IELTS Cấp tốc</a></li>
+            <li><a href="course-detail3.html">SAT</a></li>
+            <li><a href="course-detail4.html">Khóa học phát âm</a></li>
+            <li><a href="course-detail5.html">Khóa học ngữ pháp</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu"><a href="#">Đội ngũ Zeze</a>
+          <ul>
+            <li><a href="zezeielts.html">ZeZe IELTS</a></li>
+            <li><a href="zezesat.html">ZeZe SAT</a></li>
+          </ul>
+        </li>
+        <li><a href="schedule.html">Lịch khai giảng</a></li>
+        <li><a href="contacts.html">Liên hệ</a></li>
+      </ul>
+    </nav>
 
-<ul class="menu">
-  <li>
-    <a href="courses.html">Khóa học</a>
-    <ul class="submenu">
-      <li><a href="course-detail1.html">Khóa học 1</a></li>
-      <li><a href="course-detail2.html">Khóa học 2</a></li>
-      <li><a href="course-detail3.html">Khóa học 3</a></li>
-      <li><a href="course-detail4.html">Khóa học 4</a></li>
-      <li><a href="course-detail5.html">Khóa học 5</a></li>
-    </ul>
-  </li>
-  <li><a href="schedule.html">Lịch học</a></li>
-  <li><a href="teachers.html">Đội Ngũ Giáo viên</a></li>
-  <li><a href="about.html">Giới thiệu</a></li>
-</ul>
-    <a href="signup.html" class="cta">Đăng ký</a>
+    <div class="actions">
+      <a href="signin.html" class="login">Đăng nhập</a>
+      <a href="signup.html" class="register">Đăng ký</a>
+
+    </div>
   </header>
+
+  <main style="padding-top:160px;">
+    <section style="height:1500px; background:#f5f5f5; padding:40px;">
+    </section>
+  </main>
+
 </body>
 </html>

@@ -1,0 +1,143 @@
+/* Reset mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Banner chạy chữ */
+.news-banner {
+  background-color: #ffba42;
+  color: #00537a;
+  padding: 5px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: fixed;       /* luôn cố định */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1100;         /* cao hơn header */
+}
+
+.news-banner span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollText 15s linear infinite;
+  font-weight: bold;
+}
+
+@keyframes scrollText {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+/* Header cố định */
+header {
+  position: fixed;
+  top: 30px;             /* nằm ngay dưới banner */
+  left: 0;
+  width: 100%;
+  background-color: #00537a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  z-index: 1000;
+  color: white;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+}
+
+/* Menu giữa */
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffba42;
+}
+
+/* Mũi tên dropdown */
+nav ul li a::after {
+  content: " ▼";
+  font-size: 12px;
+  display: none;
+}
+
+nav ul li.has-submenu > a::after {
+  display: inline;
+}
+
+/* Submenu */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #00537a;
+  min-width: 180px;
+  list-style: none;
+}
+
+nav ul li ul li {
+  border-top: 1px solid #00405e;
+}
+
+nav ul li ul li a {
+  display: block;
+  padding: 10px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+/* Nút đăng ký & đăng nhập */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions a {
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.actions .register {
+  background-color: #ffba42;
+  color: #00537a;
+}
+
+.actions .login {
+  background-color: white;
+  color: #00537a;
+}

@@ -12,17 +12,35 @@ body{
                  max-width: 900px;   /* chiều rộng tối đa */
             }
 .navbar {
-             display: flex;
-             align-items: center;
-             justify-content: space-between;
-            background-color: #00537a;
-            padding: 10px 40px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-             }
+  display: flex;                 
+  align-items: center;           
+  justify-content: space-between;
+  background-color: #00537a;     
+  padding: 10px 40px;
+
+  position: fixed;   /* cố định thanh navbar */
+  top: 0;            /* dính sát trên cùng */
+  left: 0;           
+  width: 100%;       /* chiếm toàn bộ chiều ngang */
+  z-index: 1000;     /* nổi lên trên nội dung khác */
+}
+
+/* để nội dung bên dưới không bị navbar che mất */
+body {
+  margin: 0;
+  padding-top: 70px; /* chỉnh cho bằng chiều cao navbar */
+}
+
+.navbar a {
+  color: white; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #ffcc00; /* hiệu ứng hover cho đẹp */
+}
+
 .logo {
               display: flex;
              align-items: center;
@@ -236,4 +254,5 @@ img{
   padding: 40px 20px;        /* khoảng cách trong */
   text-align: center;        /* căn giữa nội dung */
 }
+
 

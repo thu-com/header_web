@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-        <meta charset="UTF-8">
-        <title>Khóa học ngữ pháp</title>
-        <link href="http://fonts.googleapis.com/css?family=Marko+One" rel="stylesheet">
-        <style>
-           @import url("mystyles.css");
-        </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to ZeZe English Center</title>
+    <style>
+    .infiniteslide_wrap {
+      width: 100%;          
+      overflow: hidden;      
+      background: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 10px 0;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
 
+    .infiniteslide {
+      display: inline-block;
+      padding-right: 50px; 
+    }
+
+    .slide-track {
+      display: inline-block;
+      animation: slide 10s linear infinite;
+    }
+
+    @keyframes slide {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); } 
+    }
+  </style>
 </head>
-
-
 <body>
-  <header>
-     <div class="infiniteslide_wrap">
+  <div class="infiniteslide_wrap">
     <div class="slide-track">
       <div class="infiniteslide">🎉 Welcome to ZeZe English Center 🎉</div>
       <div class="infiniteslide">🎉 Welcome to ZeZe English Center 🎉</div>
@@ -26,31 +45,97 @@
       <div class="infiniteslide">🎉 Welcome to ZeZe English Center 🎉</div>
     </div>
   </div>
-  </header>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #00537a; 
+      padding: 10px 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 40px;
+      width: 40px;
+    }
+
+    .logo span {
+      color: white;
+      font-weight: bold;
+    }
+
+    .menu {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .menu li a:hover {
+      text-decoration: underline;
+    }
 
 
+    .cta {
+      background-color: #ffcc00; 
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .cta:hover {
+      background-color: #ffdb4d;
+    }
+  </style>
+</head>
+<body>
   <header class="navbar">
     <div class="logo">
-      <img src="logo1.png" alt="Logo" style="background: transparent;">
-        <a href="main.html" target="_blank">
-    <span style="color: blue; font-weight: bold;"></span>
-      <span>
-  <a href="main.html" style="color:#ffcc00; text-decoration:none;">
+  <a href="main.html" target="_blank" style="color:#ffcc00; text-decoration:none; font-weight:bold; display: flex; align-items: center; gap: 10px;">
+    <img src="logo1.png" alt="Logo" style="background: transparent; height:40px;">
     ZeZe English
   </a>
-</span>
+</div>
 
 
-    </div>
-
-
-    <ul class="menu">
-      <li><a href="Courses.html">Lịch học</a></li>
-      <li><a href="Teachers.html">Giáo viên</a></li>
-      <li><a href="About.html">Giới thiệu</a></li>
+<ul class="menu">
+  <li>
+    <a href="courses.html">Khóa học</a>
+    <ul class="submenu">
+      <li><a href="course-detail1.html">Khóa học 1</a></li>
+      <li><a href="course-detail2.html">Khóa học 2</a></li>
+      <li><a href="course-detail3.html">Khóa học 3</a></li>
+      <li><a href="course-detail4.html">Khóa học 4</a></li>
+      <li><a href="course-detail5.html">Khóa học 5</a></li>
     </ul>
-    <a href="Signup.html" class="cta">Đăng ký</a>
-</header>
+  </li>
+  <li><a href="schedule.html">Lịch học</a></li>
+  <li><a href="teachers.html">Đội Ngũ Giáo viên</a></li>
+  <li><a href="about.html">Giới thiệu</a></li>
+</ul>
+    <a href="signup.html" class="cta">Đăng ký</a>
+  </header>
 <header class="blog-header">
   <section class="yellow-section">
     <h1>Blog ZEZE English</h1>
@@ -61,6 +146,11 @@
     </p>
     </section>
 </header>
+
+
+
+
+
 
   <div class="layout">
     <!-- LEFT: table of contents / tóm tắt -->
@@ -74,6 +164,8 @@
         <li><a href="#information">Thông tin tư vấn</a></li>
       </ul>
     </aside>
+
+
     <!-- MAIN -->
     <main class="article" id="main" role="main">
       <h1 id="intro">Khóa học ngữ pháp tiếng Anh ứng dụng (Grammar in Use)</h1>
@@ -85,12 +177,14 @@
         dụng vào thực tế. Thấu hiểu điều đó, ZEZE English đã thiết kế bộ đôi khóa học Grammar In Use - Ngữ pháp Ứng dụng
         nhằm hệ thống hóa kiến thức một cách bài bản, dễ hiểu và tập trung vào khả năng vận dụng thực tế.</p>
 
+
       <figure>
         <img src="images/nguphap.png" alt="Khóa học ngu phap">
         <figcaption>
            Sách ngữ pháp độc quyền tại ZeZe English
       </figcaption>
       </figure>
+
 
       <p><strong>Tại sao nên chọn khóa học ngữ pháp "Grammar in Use" tại ZEZE?</strong>
         <ol>
@@ -106,6 +200,7 @@
               học viên tiếp thu kiến thức dễ dàng.</li>
             </ol>
 
+
       <h2 id="pricing">Báo giá khóa học ngữ pháp tiếng Anh mới nhất tại ZEZE</h2>
       <p>Giá bán lẻ khóa ngữ pháp (đơn vị tính: VND)
       <table class="HP">
@@ -117,6 +212,7 @@
       </table>
       </p>
 
+
       <p>Giá bán khóa tiếng anh nền tảng (Khóa học phát âm + Ngữ pháp Basic)(Đơn vị tính:VND)
         <table class="HP">
         <thead>
@@ -126,11 +222,13 @@
       </table>
         </p>
 
+
       <p><ul>
        <li>Khóa học này dành cho các bạn học sinh cuối cấp 1 lớp 4-5 cần nền tảng kiến thức vững chắc để chuyển cấp.</li>
        <li>Học sinh đầu cấp 2 lớp 6, 7 hổng kiến thức ngữ pháp, ngữ âm cần cải thiện điểm số trên trường.</li>
        <li>Các bạn học sinh mất gốc cần lấy lại nền tảng để tham gia các chương trình học nâng cao cho các kỳ thi như IELTS, TOEFL.</li>
       </ul></p>
+
 
       <h2 id="details">Thông tin chi tiết khóa học ngữ pháp tại ZEZE</h2>
       <p><ol>
@@ -155,6 +253,7 @@
           </ul></p>
         </ol>
         </p>
+
 
       <h2 id="faq">FAQ</h2>
       <details><summary>Ai là người giảng dạy các khóa học ngữ pháp này?</summary><p>Hiện tại, khóa học ngữ pháp "Grammar In Use" tại ZEZE được phụ trách chính
@@ -203,6 +302,7 @@
         </form>
     </main>
 
+
     <!-- RIGHT: related + contact -->
     <aside class="sidebar-right" aria-label="Khóa học liên quan">
       <h4>Tìm hiểu các khóa học tại ECE</h4>
@@ -218,7 +318,6 @@
       </div>
     </aside>
   </div>
+
 </body>
 </html>
-
-
